@@ -1,0 +1,71 @@
+import React from 'react';
+
+function Purchaselisttable(){
+    return (
+        <table className="table table-bordered">
+            <thead>
+                <tr>
+                <th scope="col"># Orden</th>
+                <th scope="col">Cliente</th>
+                <th scope="col">Producto</th>
+                <th scope="col">Cantidad(cuñetes)</th>
+                <th scope="col">Estado de Producto</th>
+                <th scope="col">Estado de Orden</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                <th scope="row"><input type="checkbox" class="custom-control-input" id="customCheck1" checked></input>
+                    <label class="custom-control-label" for="customCheck1"></label>1</th>
+                <td>Falabella</td>
+                <td>Pintura Morada</td>
+                <td>200</td>
+                <td>En Bodega</td>
+                <td>Lista para despacho</td>
+                </tr>
+                <tr>
+                <th scope="row"><input type="checkbox" class="custom-control-input" id="customCheck2" checked></input>
+                    <label class="custom-control-label" for="customCheck1"></label>2</th>
+                <td>El constructor</td>
+                <td>Pintura Naranja</td>
+                <td>500</td>
+                <td>En fabricación</td>
+                <td>Pendiente</td>
+                </tr>
+                <tr>
+                <th scope="row"><input type="checkbox" class="custom-control-input" id="customCheck3" checked></input>
+                    <label class="custom-control-label" for="customCheck1"></label>3</th>
+                <td>Jumbo</td>
+                <td>Pintura Verde</td>
+                <td>800</td>
+                <td>Por Fabricar</td>
+                <td>Pendiente</td>
+                </tr>
+                <tr>
+                <th scope="row"><input type="checkbox" class="custom-control-input" id="customCheck4" checked></input>
+                    <label class="custom-control-label" for="customCheck1"></label>4</th>
+                <td>Jumbo</td>
+                <td>Pintura Verde</td>
+                <td>800</td>
+                <td>Por Fabricar</td>
+                <td>Pendiente</td>
+                </tr>
+                <tr>
+                <th scope="row"><input type="checkbox" class="custom-control-input" id="customCheck5" checked></input>
+                    <label class="custom-control-label" for="customCheck1"></label>5</th>
+                <td>Jumbo</td>
+                <td>Pintura Verde</td>
+                <td>800</td>
+                <td>Por Fabricar</td>
+                <td>Pendiente</td>
+                </tr>
+            </tbody>
+            </table>
+    );
+}
+
+export default function Bootstrap(){
+    return (
+        <Purchaselisttable/>
+    );
+}
