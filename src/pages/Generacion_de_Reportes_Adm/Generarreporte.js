@@ -1,7 +1,7 @@
 import React from 'react';	
-import './App.css';		
-import Bannersuperior from '../src/components/Bannersuperior';		
-import Bannerinferior from '../src/components/Bannerinferior';		
+import '../../App.css';		
+import Bannersuperior from '../../components/Bannersuperior';		
+import Bannerinferior from '../../components/Bannerinferior';		
 //import App from '../../App';
 		
 function Generarreporte(){ 		
@@ -43,7 +43,12 @@ function Generarreporte(){
                     <div>
                     <button type="button" className="btn btn-secondary btn-lg btn-block" onclick= "location.href='index.html'" >Regresar</button>
                     </div>
+
+
+
 </div>
+
+
             </section>
 
 			<section>	
@@ -58,29 +63,3 @@ function Generarreporte(){
 	);	
 }	
 export default Generarreporte;
-
-/*import logo from './logo.svg';
-import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
-
-export default App;*/
