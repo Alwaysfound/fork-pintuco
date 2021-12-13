@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import bannersuperior from '../img/banner superior modificado.png'
+import bannersuperior from '../img/bannersuperiormodificado.png'
 
 
 class Bannersuperior extends Component{

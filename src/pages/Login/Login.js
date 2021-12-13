@@ -1,36 +1,32 @@
-import '../../App.css';
-import Bannersuperior from '../../components/Bannersuperior';
-import Bannerinferior from '../../components/Bannerinferior';
+import React from 'react';	
+import './Login.css';		
 import Loginlogo from '../../components/Loginlogo';
+import Checkbox from '../../components/Checkbox';
+import Signinbutton from '../../components/Signinbutton';		
 
-function App() {
+function Login() {
   return (
-    <div className="App">
-      <section>
-        <Bannersuperior></Bannersuperior>
-      </section>
-      <header className="App-header">
-        <Loginlogo></Loginlogo>
-        <input type="email" name="email" placeholder="Ingrese su Correo Electronico"></input>
-        <input type="password" name="password" placeholder="Ingrese su Contraseña"></input>
-        <input type="checkbox" name="remember" id="iRemenber" value="1"></input>
-        <label>Recordar Contraseña</label>
-        <h3>Recordar Contraseña</h3>
-        <button className="btn btn-warning btn-rounded" type="button" >INICIAR SESION</button>
-        <a className="recovery"
-          href="https://reactjs.org" 
+    <div className="Body">
+      <div class="header"></div>
+      <Loginlogo></Loginlogo>
+      <input type="email" name="email" placeholder="Correo Electronico"></input>
+      <br></br>
+      <input type="password" name="password" placeholder="Contraseña"></input>
+      <br></br>
+      <Checkbox></Checkbox>
+      <br></br>
+      <Signinbutton></Signinbutton>
+      <br></br>
+      <a className="recovery"
+          href="./pages/Recuperar_contraseña/Contraseña.js" 
           >
             Olvidé mi Contraseña
-        </a>
-        <p>
-          Copyright 2021.
-        </p>
-      </header>
-      <section>
-        <Bannerinferior></Bannerinferior> 
-      </section>
+      </a>
+      <br></br>
+      <p>Copyright 2021.</p>  
+      <div class="footer"></div> 
     </div>
   );
 }
 
-export default App;
+export default Login;

@@ -1,68 +1,26 @@
 import React from 'react';	
 import './App.css';		
-import Bannersuperior from '../src/components/Bannersuperior';		
-import Bannerinferior from '../src/components/Bannerinferior';		
-//import App from '../../App';
-		
-function Generarreporte(){ 		
-	return(
-		<div classNameName="App">
-			<section>
-				<Bannersuperior></Bannersuperior>
-			</section>
-			
-            <section>
-            <div id="contenedor"className="container">
-                    <div className="row justify-content-md-center">
-                    <div id="registro1" className="col col-lg-2">
-                    Materia mas vendida
-                    </div>
-                    <div className="col-md-auto">
-                    XXXXXXXXX
-                    </div>
-                    </div>
+import Loginlogo from '../src/components/Loginlogo';
+import Checkbox from '../src/components/Checkbox';
+import Signinbutton from '../src/components/Signinbutton';		
+/*import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Link,
+  /*Redirect
+} from "react-router-dom";
+import MenuUsuarioProduccion from './pages/Menu_produccion/MenuProduccion';
+import Login from './pages/Login/Login';
+import DisponibilidadProductos from './pages/Disponibilidad_productos/DisponibilidadProductos'
+import Configuraciondeproductos from './pages/Configuracion_de_productos/Configuraciondeproductos'
+import OrdenesdeCompra from './pages/Ordenes_de_compra/OrdenesdeCompra'
+import OrdenesdeProduccion from './pages/Ordenes_de_produccion/OrdenesdeProduccion'
+import Pedidospordespachar from './pages/Pedidos_por_despachar/Pedidospordespachar'
+import Pedidosdespachados from './pages/Pedidos_despachados/Pedidosdespachados'
+import Recuperarcontraseña from './pages/Recuperar_contraseña/Contraseña'*/
 
-                    <div className="row justify-content-md-center">
-                    <div id="registro2" className="col col-lg-2">
-                    Pedidos por depachar
-                    </div>
-                    <div className="col-md-auto">
-                    XXXXXXXXX
-                    </div>
-                    </div>
-
-                    <div className="row justify-content-md-center">
-                    <div id="registro3" className="col col-lg-2">
-                    Pedidos despachados
-                    </div>
-                    <div className="col-md-auto">
-                    XXXXXXXXX
-                    </div>
-                    </div>
-
-                    <div>
-                    <button type="button" className="btn btn-secondary btn-lg btn-block" onclick= "location.href='index.html'" >Regresar</button>
-                    </div>
-</div>
-            </section>
-
-			<section>	
-				<Bannerinferior></Bannerinferior>
-			</section>
-
-
-
-		</div>
-
-
-	);	
-}	
-export default Generarreporte;
-
-/*import logo from './logo.svg';
-import './App.css';
-
-function App() {
+/*function App() {
   return (
     <div className="App">
       <header className="App-header">
@@ -84,3 +42,25 @@ function App() {
 }
 
 export default App;*/
+
+function App() {
+  return (
+    <div className="Body">
+      <div className="header"></div>
+      <Loginlogo></Loginlogo>
+      <input type="email" name="email" placeholder="Correo Electronico"></input>
+      <br></br>
+      <input type="password" name="password" placeholder="Contraseña"></input>
+      <br></br>
+      <Checkbox></Checkbox>
+      <br></br>
+      <Signinbutton></Signinbutton>
+      <br></br>
+      <br></br>
+      <p>Copyright 2021.</p>  
+      <div className="footer"></div>
+    </div>
+  );
+}
+
+export default App;

@@ -1,0 +1,26 @@
+.Body {
+    background-image: url("/src/img/Fondopantallamodificado.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.header {
+    width: 1340px;
+    height: 160px;
+    background-image: url("../../img/bannersuperiormodificado.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.footer {
+    width: 1340px;
+    height: 160px;
+    background-image: url("../../img/bennerinferior2.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
