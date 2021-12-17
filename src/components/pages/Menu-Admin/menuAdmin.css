@@ -1,0 +1,44 @@
+.Body {
+    background-image: url("/src/img/Fondopantallamodificado.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.header {
+    width: 1340px;
+    height: 160px;
+    background-image: url("../../../img/bannersuperiormodificado.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.left {
+    position: absolute;
+    left:    0;
+    bottom:   2;
+}
+
+.right {
+    position: absolute;
+    right:    0;
+    bottom:   2;
+}
+
+.center {
+    position: absolute;
+    left:    15;
+    bottom:   2;
+}
+
+.footer {
+    width: 1340px;
+    height: 160px;
+    background-image: url("../../../img/bennerinferior2.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
