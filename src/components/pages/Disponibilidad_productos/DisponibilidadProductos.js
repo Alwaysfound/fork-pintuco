@@ -3,6 +3,7 @@ import './Disponibilidad.css';
 import Menubutton from '../../Menubutton';
 import Colorresultstable from '../../Colorresultstable';
 import Buttontoolbar from '../../Buttontoolbar';
+/*import {Link} from 'react-router-dom'*/
 
 function DisponibilidadProductos() {
     return (
@@ -10,7 +11,7 @@ function DisponibilidadProductos() {
         <div class="header"></div>
         <br></br>
         <br></br>
-        <Menubutton></Menubutton>
+       <Menubutton></Menubutton>   
         <br></br>
         <br></br>
         <div className="sidebar-heading border-bottom bg-light">Menu Productos Disponibles

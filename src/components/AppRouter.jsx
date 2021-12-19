@@ -12,6 +12,7 @@ import MenuAdmin from './pages/Menu-Admin/menuAdmin.js'
 import Buscarmateria from './pages/Busqueda_de_productos_Adm/Buscarmateria.js'
 import Editarproducto from './pages/Edicion_de_productos_Adm/Editarproducto.js'
 import Generarreporte from './pages/Generacion_de_Reportes_Adm/Generarreporte.js'
+import CreacionUsuarios from './pages/Creacion-Usuarios-Admin/Creacion-Usuarios-Admin.js'
 
 export default function AppRouter() {
     return (
@@ -29,6 +30,7 @@ export default function AppRouter() {
                 <Route path="/busqueda-de-productos-admin" element={ <Buscarmateria />}/>
                 <Route path="/edicion-de-productos-admin" element={ <Editarproducto />}/>
                 <Route path="/generacion-de-reportes-admin" element={ <Generarreporte />}/>
+                <Route path="/creacion-usuarios-Admin" element={ <CreacionUsuarios  />}/>
             </Routes>
         </Router>
     )
