@@ -2,7 +2,8 @@ import React from 'react';
 import './Login.css';		
 import Loginlogo from '../../Loginlogo';
 import Checkbox from '../../Checkbox';
-import Signinbutton from '../../Signinbutton';		
+import Signinbutton from '../../Signinbutton';	
+import {Link} from 'react-router-dom'	
 
 
 function Login() {
@@ -24,6 +25,9 @@ function Login() {
             Olvidé mi Contraseña
       </a>
       <br></br>
+      <Link to={'/menu-admin'}><p>Adm</p></Link>
+      <Link to={'/busqueda-de-productos-admin'}><p>Inv</p></Link>
+      <Link to={'/menu-produccion'}><p>Prod</p></Link> 
       <p>Copyright 2021.</p>  
       <div class="footer"></div> 
     </div>

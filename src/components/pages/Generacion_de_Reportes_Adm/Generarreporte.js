@@ -1,5 +1,6 @@
 import React from "react";
 import "./Generarreporte.css";
+import {Link} from "react-router-dom";
 
 function Generarreporte() {
   return (
@@ -33,13 +34,13 @@ function Generarreporte() {
           </div>
 
           <div>
-            <button
+            <Link to={'/busqueda-de-productos-admin'}><button
               type="button"
               className="btn btn-secondary btn-lg btn-block"
               onclick="location.href='index.html'"
             >
               Regresar
-            </button>
+            </button></Link>
           </div>
         </div>
       </div>

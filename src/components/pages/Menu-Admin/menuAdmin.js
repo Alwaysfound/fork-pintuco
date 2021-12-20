@@ -9,35 +9,21 @@ function MenuAdmin() {
       <br></br>
       <br></br>
       <div className="left">
-        <button
-          className="btn btn-outline-warning btn-rounded btn-sm my-0"
-          type="submit"
-        >
-          Ingresar a inventarios
-        </button>
+      <Link to={'/busqueda-de-productos-admin'}><button type="button" className="btn btn-warning btn-rounded">Ingresar a Inventarios</button></Link>
       </div>
       <br></br>
       <br></br>
       <div className="right">
-        <Link to={'/menu-produccion'}><button
-          className="btn btn-outline-warning btn-rounded btn-sm my-0"
-          type="submit"
-        >
-          Ingresar a produccion
-        </button></Link>
+        <Link to={'/menu-produccion'}><button type="button" className="btn btn-warning btn-rounded">Ingresar a Produccion</button></Link>
       </div>
       <br></br>
       <br></br>
       <div className="center">
-      <Link to={'/creacion-usuarios-Admin'}><button
-          className="btn btn-outline-warning btn-rounded btn-sm my-0"
-          type="submit"
-        >
-          Gestionar Usuarios
-        </button></Link>
+      <Link to={'/creacion-usuarios-Admin'}><button type="button" className="btn btn-warning btn-rounded">Gestionar Usuarios</button></Link>
       </div>
       <br></br>
       <br></br>
+      <Link to={'/'}><button type="button" className="btn btn-warning btn-rounded">cerrar sesion</button></Link>
       <div class="footer"></div>
     </div>
   );

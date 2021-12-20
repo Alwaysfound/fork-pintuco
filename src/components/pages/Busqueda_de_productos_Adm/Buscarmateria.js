@@ -1,5 +1,6 @@
 import React from "react";
 import "./Buscarmateria.css";
+import {Link} from "react-router-dom";
 
 function Buscarmateria() {
   return (
@@ -40,13 +41,13 @@ function Buscarmateria() {
                 <th>1</th>
                 <th>169900</th>
                 <th>
-                  <button
+                  <Link to={'/edicion-de-productos-admin'}><button
                     className="btn btn-primary"
                     onclick="location.href='edit_inventarios.html'"
                     type="button"
                   >
                     Editar
-                  </button>
+                  </button></Link>
                 </th>
               </tr>
               <tr>
@@ -56,13 +57,13 @@ function Buscarmateria() {
                 <th>3</th>
                 <th>170000</th>
                 <th>
-                  <button
+                <Link to={'/edicion-de-productos-admin'}><button
                     className="btn btn-primary"
                     onclick="location.href='edit_inventarios.html'"
                     type="button"
                   >
                     Editar
-                  </button>
+                  </button></Link>
                 </th>
               </tr>
             </tbody>
@@ -72,16 +73,17 @@ function Buscarmateria() {
 	  <br></br>
       <br></br>
       <div className="generate-report">
-        <button
+      <Link to={'/generacion-de-reportes-admin'}><button
           type="button"
           className="btn btn-primary"
           onclick="location.href='generar_reporte.html'"
         >
           Generar Reportes
-        </button>
+        </button></Link>
       </div>
       <br></br>
       <br></br>
+      <Link to={'/'}><button type="button" className="btn btn-warning btn-rounded">cerrar sesion</button></Link>
       <div class="footer"></div>
     </div>
   );

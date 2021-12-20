@@ -1,5 +1,6 @@
 import React from "react";
 import "./Editarproducto.css";
+import {Link} from "react-router-dom";
 
 
 function Editarproducto() {
@@ -44,13 +45,13 @@ function Editarproducto() {
           <button type="button" className="btn btn-primary btn-lg btn-block">
             Guardar
           </button>
-          <button
+          <Link to={'/busqueda-de-productos-admin'}><button
             type="button"
             className="btn btn-secondary btn-lg btn-block"
             onclick="location.href='index.html'"
           >
             Regresar
-          </button>
+          </button></Link>
         </form>
       </div>
       <div className="footer"></div>
