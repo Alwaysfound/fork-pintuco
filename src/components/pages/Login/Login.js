@@ -19,15 +19,13 @@ function Login() {
       <br></br>
       <Signinbutton></Signinbutton>
       <br></br>
-      <a className="recovery"
-          href="./pages/Recuperar_contraseña/Contraseña.js" 
-          >
-            Olvidé mi Contraseña
-      </a>
       <br></br>
-      <Link to={'/menu-admin'}><p>Adm</p></Link>
-      <Link to={'/busqueda-de-productos-admin'}><p>Inv</p></Link>
-      <Link to={'/menu-produccion'}><p>Prod</p></Link> 
+      <Link to={'/menu-admin'}><button type="button" className="btn btn-primary btn-rounded">MENU ADMINISTRADOR</button></Link>
+      <br></br>
+      <Link to={'/busqueda-de-productos-admin'}><button type="button" className="btn btn-info btn-rounded">MENU INVENTARIO</button></Link>
+      <br></br>
+      <Link to={'/menu-produccion'}><button type="button" className="btn btn-success btn-rounded">MENU PRODUCCION</button></Link> 
+      <br></br>
       <p>Copyright 2021.</p>  
       <div class="footer"></div> 
     </div>
